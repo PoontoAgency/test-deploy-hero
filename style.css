@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#fafafa;min-height:100vh}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(224,90,58,.15) 0%,transparent 60%)}
+.hero-content{position:relative;text-align:center;padding:2rem;animation:fadeIn .8s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.badge{display:inline-block;padding:.5rem 1.2rem;background:rgba(224,90,58,.1);border:1px solid rgba(224,90,58,.3);border-radius:100px;font-size:.85rem;font-weight:500;color:#E05A3A;margin-bottom:2rem}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.5rem}
+.gradient{background:linear-gradient(135deg,#E05A3A,#f59e0b,#E05A3A);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 3s linear infinite}
+@keyframes shimmer{to{background-position:200% center}}
+.subtitle{font-size:1.15rem;color:#a1a1aa;margin-bottom:2rem}
+.btn{display:inline-block;padding:.8rem 2rem;background:#E05A3A;color:white;border-radius:12px;font-weight:600;text-decoration:none;transition:all .2s}
+.btn:hover{background:#c94a2d;transform:translateY(-2px);box-shadow:0 8px 30px rgba(224,90,58,.3)}
